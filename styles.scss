@@ -1,0 +1,745 @@
+$color-green: #80a94d;
+@font-face {
+  font-family: "Gadugi";
+  src: url(font/Gadugi.ttf);
+}
+
+@font-face {
+  font-family: "GadugiB";
+  src: url(font/gadugib.ttf);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Gadugi";
+}
+
+button {
+  cursor: pointer;
+}
+
+nav {
+  height: 100px;
+  // background-color: rgb(185, 167, 167);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 10vw;
+  position: fixed;
+  width: 80%;
+  top: 0;
+  left: 0;
+  font-weight: 100;
+  z-index: 100;
+  transition: all 0.3s ease-in;
+
+  .logo {
+    height: 80%;
+    height: 80%;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .nav-links {
+    img {
+      display: none;
+    }
+    ul {
+      list-style-type: none;
+
+      .navigation-items {
+        display: inline-block;
+
+        a {
+          text-decoration: none;
+          padding: 40px;
+          color: white;
+          font-size: 1.2rem;
+          font-family: Arial, Helvetica, sans-serif;
+          transition: all 0.1s ease;
+          font-weight: bold;
+
+          &:hover {
+            color: #b4b4b4;
+          }
+        }
+      }
+
+      .navigation-button {
+        padding: 10px 10px;
+        background-color: transparent;
+        border: 2px solid $color-green;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .menu {
+    height: 80%;
+    height: 80%;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      display: none;
+    }
+  }
+}
+
+.hero-section {
+  min-height: 100vh;
+  background-image: url(images/TopWallpaper.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
+  font-family: Gadugi;
+
+  .container {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    &-text-container {
+      color: rgb(240, 240, 240);
+      padding-right: 50px;
+
+      .secondH1 {
+        font-weight: 100;
+      }
+
+      h1 {
+        font-size: 5rem;
+        margin: 0px;
+      }
+
+      p {
+        margin: 0px;
+        font-size: 1.5rem;
+        font-weight: 100;
+      }
+
+      .btn-container {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+
+        button {
+          padding: 15px 40px;
+          width: 48%;
+          border-radius: 10px;
+          outline: none;
+          border: 1px solid white;
+          background-color: transparent;
+          font-size: 1.1rem;
+          text-decoration: none;
+          cursor: pointer;
+          color: white;
+        }
+
+        .btn-green {
+          background-color: $color-green;
+          border: none;
+          color: black;
+        }
+      }
+    }
+
+    &-img-container {
+      img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.coins-section {
+  padding: 50px 10%;
+  background-color: #111111;
+
+  .text-container {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    h1 {
+      text-align: center;
+      color: white;
+      font-weight: 100;
+      border-bottom: 1px solid #c0c0c0;
+      padding-bottom: 30px;
+      display: block;
+    }
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    img {
+      width: 200px;
+      padding: 10px;
+    }
+  }
+}
+
+.after-coins-section {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 15%;
+  align-self: flex-end;
+
+  .box-container {
+    width: 450px;
+    display: flex;
+    margin: 0 auto;
+    .box {
+      background-color: #252525;
+      padding: 20px 0px;
+      text-align: center;
+      color: white;
+      border-radius: 10px;
+      width: 400px;
+
+      h1 {
+        margin: 0px;
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        font-size: 0.7rem;
+        margin-top: 0px;
+        border-bottom: 2px solid rgb(54, 54, 54);
+        padding: 0px 10%;
+        padding-bottom: 20px;
+      }
+
+      .number {
+        font-size: 6rem;
+        font-family: "GadugiB";
+        margin: 0px;
+
+        &-subtitle {
+          margin-top: -10px;
+        }
+      }
+
+      button {
+        width: 80%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: $color-green;
+        font-size: 1.3rem;
+        color: black;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .text-container {
+    color: white;
+    width: 60%;
+    // background-color: pink;
+    padding-left: 10%;
+    h1 {
+      font-size: 5rem;
+      margin: 0px;
+      font-family: "Gadugib";
+    }
+
+    .subtitle {
+      font-family: "Gadugi";
+      font-weight: 100;
+    }
+
+    a {
+      color: $color-green;
+      text-decoration: none;
+    }
+  }
+}
+
+.with-number {
+  background-image: url(images/FourthSectionWallpaper.png);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 50px;
+  text-align: center;
+
+  h1 {
+    margin: 0px;
+    font-size: 3rem;
+  }
+  span {
+    color: $color-green;
+  }
+
+  p {
+    font-size: 1.25rem;
+    width: 50%;
+    display: block;
+    margin: 10px auto 50px auto;
+  }
+
+  .number {
+    font-size: 6rem;
+    font-family: "GadugiB";
+    font-weight: bold;
+  }
+
+  .btn-container {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      padding: 20px 40px;
+      border: 2px solid white;
+      background-color: transparent;
+      color: white;
+      border-radius: 10px;
+      width: 45%;
+      font-size: 1.2rem;
+    }
+
+    .btn-green {
+      background-color: $color-green;
+      outline: none;
+      border: none;
+      color: black;
+    }
+  }
+}
+
+.fifth-section {
+  background-color: black;
+  display: flex;
+  padding: 50px 10%;
+
+  .img-container {
+    width: 55%;
+    height: 80%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .box-container {
+    width: 450px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+
+    .box {
+      background-color: #252525;
+      padding: 20px 0px;
+      text-align: center;
+      color: white;
+      border-radius: 10px;
+      width: 400px;
+      height: 80%;
+
+      h1 {
+        margin: 0px;
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        font-size: 0.7rem;
+        margin-top: 0px;
+        border-bottom: 2px solid rgb(54, 54, 54);
+        padding: 0px 10%;
+        padding-bottom: 20px;
+      }
+
+      .number {
+        font-size: 6rem;
+        font-family: "GadugiB";
+        margin: 0px;
+
+        &-subtitle {
+          margin-top: -10px;
+        }
+      }
+
+      button {
+        width: 80%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: $color-green;
+        font-size: 1.3rem;
+        color: black;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+footer {
+  background-image: url(images/TopWallpaper.png);
+  background-position: center 70%;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 10%;
+
+  h1 {
+    margin: 0px;
+  }
+
+  .logo-container {
+    img {
+      width: 80px;
+    }
+
+    h1 {
+      font-family: "GadugiB";
+    }
+  }
+
+  .links-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+    .links {
+      a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.copyright {
+  color: white;
+  background-color: #111111;
+
+  p {
+    margin: 0px;
+    padding: 40px;
+    text-align: center;
+  }
+}
+// ---------------------------------------------------------Media Queries-----------------------
+@media screen and (max-width: 1200px) {
+  nav {
+    .nav-links {
+      ul {
+        .navigation-items {
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .hero-section {
+    padding-top: 50px;
+    padding-right: 0px;
+    .container {
+      flex-direction: column;
+
+      &-img-container {
+        width: 95%;
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .coins-section {
+    .image-container {
+      img {
+        width: 150px;
+      }
+    }
+  }
+
+  .after-coins-section {
+    .text-container {
+      width: 80%;
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  .fifth-section {
+    flex-direction: column;
+
+    .img-container {
+      width: 100%;
+    }
+
+    .box-container {
+      margin-top: 40px;
+    }
+  }
+}
+// ---------------------------------------------------------Media Queries 992-----------------------
+
+@media screen and (max-width: 992px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    height: 60px;
+    position: fixed;
+
+    .menu img {
+      display: inline-block;
+    }
+
+    .nav-links {
+      position: absolute;
+      height: 100vh;
+      top: 0;
+      right: -300px;
+      width: 300px;
+      display: flex;
+      align-items: center;
+      transition: all 0.5s;
+      transition-timing-function: cubic-bezier(0.56, 0.31, 0.01, 0.8);
+      background-color: black;
+
+      img {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      ul {
+        .navigation-items {
+          display: block;
+          margin: 20px 0px;
+
+          a {
+            font-size: 2.5rem;
+            color: white;
+          }
+        }
+
+        button {
+          padding: 0px;
+        }
+      }
+    }
+  }
+
+  .hero-section {
+    .container {
+      &-text-container {
+        h1 {
+          font-size: 4.5rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .coins-section {
+    padding: 50px 5%;
+    .image-container {
+      width: 100%;
+      flex-wrap: wrap;
+
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .after-coins-section {
+    flex-direction: column;
+    align-items: center;
+
+    .box-container {
+      .box {
+        width: 100%;
+      }
+    }
+
+    .text-container {
+      padding-left: 0px;
+      margin-top: 40px;
+    }
+  }
+
+  .with-number {
+    .btn-container {
+      width: 80%;
+    }
+    p {
+      width: 80%;
+    }
+  }
+
+  footer {
+    flex-direction: column;
+
+    .links-container {
+      width: 100%;
+    }
+  }
+}
+// ---------------------------------------------------------Media Queries 768-----------------------
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    .container {
+      &-text-container {
+        h1 {
+          font-size: 4rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        .btn-container {
+          button {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .coins-section {
+    .text-container {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+    .image-container {
+      img {
+        margin: 20px auto;
+      }
+    }
+  }
+
+  footer {
+    .links-container {
+      .links {
+        margin-top: 50px;
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+// ---------------------------------------------------------Media Queries 600-----------------------
+
+@media screen and (max-width: 600px) {
+  .hero-section {
+    padding-top: 20px;
+    .container {
+      .btn-container {
+        flex-direction: column;
+        align-items: center;
+        button {
+          width: 80%;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .after-coins-section {
+    padding: 100px 0px;
+
+    .box-container {
+      width: 80%;
+
+      .box {
+        width: 100%;
+      }
+    }
+
+    .text-container {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .with-number {
+    padding: 50px 7%;
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .number {
+      font-size: 4rem;
+    }
+
+    .btn-container {
+      flex-flow: column;
+      width: 80%;
+      button {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .fifth-section {
+    .box-container {
+      width: 80%;
+
+      .box {
+        width: 100%;
+      }
+    }
+  }
+}
+// ---------------------------------------------------------Media Queries 400-----------------------
+
+@media screen and (max-width: 400px) {
+  .fifth-section {
+    background-color: pink;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .box-container {
+      width: 100%;
+    }
+  }
+}
